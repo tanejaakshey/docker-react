@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build -t testImage -f Dockerfile.dev .
-      - run: docker run test npm run test -- --coverage
+      - run: docker build -t testimage -f Dockerfile.dev .
+      - run: docker run testimage npm run test -- --coverage
